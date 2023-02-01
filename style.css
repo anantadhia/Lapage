@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  font-family: "Unbounded", cursive, sans-serif;
+}
+
+.webgl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+nav {
+  color: white;
+  z-index: 2;
+  position: relative;
+  padding: 4rem, 8rem;
+  margin: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+nav a {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: bold;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+}
+.title {
+  color: white;
+  z-index: 2;
+  position: absolute;
+  font-size: 3rem;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -25%);
+  mix-blend-mode: color-dodge;
+  transition: 500ms;
+  border-radius: 2rem;
+}
+.title:hover {
+  background-color: white;
+  color: black;
+  border-radius: 1rem;
+}
